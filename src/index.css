@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media(width<1280px) {}
+
+@media(width<1080px) {}
+
+@media(width<920px) {}
+
+@media(width<768px) {}
+
+@media(width<580px) {}
+
+@media(width<480px) {}

@@ -1,0 +1,125 @@
+.button-animation-div {
+    position: absolute;
+    width: 32px;
+    height: 100%;
+    transform: rotate(15deg);
+    background: #FFF;
+    mix-blend-mode: overlay;
+    filter: blur(24px);
+    left: -100px;
+    animation: button-ani 2s ease infinite forwards;
+    z-index: 1;
+}
+
+.hack-sch-card-arrow {
+    position: relative;
+    z-index: 10;
+}
+
+.hack-sch-animation {
+    position: absolute;
+    top: 50%;
+    height: 8px;
+    z-index: 1;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 40px;
+    background: var(--Eminence-700, #f03df7);
+    animation: schedule-ani 1500ms ease-in infinite forwards;
+}
+
+.hack-sch-animation-1 {
+    animation: schedule-ani1 3000ms ease-in infinite forwards;
+
+}
+
+.hack-sch-animation-2 {
+    animation: schedule-ani2 3000ms ease-in infinite forwards;
+}
+
+@keyframes schedule-ani1 {
+    50% {
+        left: calc(100% + 20px);
+    }
+
+    100% {
+        left: calc(100% + 20px);
+    }
+}
+
+@keyframes schedule-ani2 {
+    0% {
+        left: 20px;
+    }
+
+    50% {
+        left: 20px;
+    }
+
+    100% {
+        left: calc(100% + 20px);
+    }
+}
+
+@keyframes button-ani {
+    75% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.button-animation-parent {
+    position: relative;
+    overflow: hidden;
+}
+
+@media(width<768px) {
+    .hack-sch-animation {
+        position: absolute;
+        top: 20px;
+        width: 8px;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 40px;
+        background: var(--Eminence-700, #f03df7);
+        animation: schedule-ani 1500ms ease-in infinite forwards;
+    }
+
+    .hack-sch-animation-1 {
+        animation: schedule-ani1 1600ms ease-in infinite forwards;
+
+    }
+
+    .hack-sch-animation-2 {
+        animation: schedule-ani2 1600ms ease-in infinite forwards;
+    }
+
+    @keyframes schedule-ani1 {
+        50% {
+            top: calc(100% + 20px);
+        }
+
+        100% {
+            top: calc(100% + 20px);
+        }
+    }
+
+    @keyframes schedule-ani2 {
+        0% {
+            top: 20px;
+        }
+
+        50% {
+            top: 20px;
+        }
+
+        100% {
+            top: calc(100% + 20px);
+        }
+    }
+
+}

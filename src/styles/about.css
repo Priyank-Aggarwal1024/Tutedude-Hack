@@ -1,0 +1,132 @@
+.about {
+    padding: 128px;
+    background: var(--Eminence-950, #450D45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.about-sscreen {
+    display: none;
+}
+
+.about-left-top {
+    height: 67px;
+    color: var(--Nerded-Brand-slate-50, #F8FAFC);
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 67.2px */
+    letter-spacing: -2.24px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.about-left-top>img {
+    height: 90px;
+    border-radius: 20px;
+    transform: rotate(-3.64deg);
+}
+
+.about-left-bottom {
+    color: var(--Nerded-Brand-slate-100, #F1F5F9);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 42px */
+    letter-spacing: -0.56px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-right {
+    display: flex;
+    width: 50%;
+}
+
+.about-heading {
+    display: inline-flex;
+    width: fit-content;
+}
+
+
+.about-image>img {
+    width: 100%;
+}
+
+
+
+@media(width<1440px) {}
+
+@media(width<1280px) {
+    .about {
+        padding: 96px;
+    }
+}
+
+@media(width<1080px) {
+    .about {
+        padding: 64px;
+    }
+
+    .about-sscreen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .about-lscreen {
+        display: none;
+    }
+
+    .about-right {
+        display: none;
+    }
+
+    .about-left-top {
+        justify-content: center;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+}
+
+@media(width<920px) {}
+
+@media(width<768px) {
+    .about {
+        padding: 64px 48px;
+    }
+}
+
+@media(width<580px) {
+    .about {
+        padding: 64px 32px;
+    }
+
+    .about-left-top {
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+}
+
+@media(width<480px) {
+    .about {
+        padding: 64px 16px;
+    }
+}

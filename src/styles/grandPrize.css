@@ -1,0 +1,138 @@
+.grand-prize {
+    padding: 128px 128px;
+}
+
+.claim-prize-ticket {
+    padding: 96px 96px 96px 64px;
+    border-radius: 64px;
+    background: radial-gradient(64.78% 65.99% at 20.91% 97.54%, #D333D3 0%, #800080 34.28%, #5D115D 52%, #350B35 100%), #FFF;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.cpt-left {
+    width: 50%;
+}
+
+.cpt-left>img {
+    width: 100%;
+}
+
+.cpt-right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 50%;
+
+}
+
+.cpt-heading {
+    color: #FFF;
+    text-shadow: 2px 2px 0px #EB996E;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -2.24px;
+}
+
+.cpt-reserve {
+    color: var(--group-800080, rgba(128, 0, 128, 0.87));
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    display: flex;
+    padding: 15px 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 14px;
+    background: #FFF;
+    width: fit-content;
+}
+
+@media(width<1280px) {
+    .grand-prize {
+        padding: 128px 96px;
+    }
+
+    .claim-prize-ticket {
+        padding: 96px 64px;
+    }
+}
+
+@media(width<1080px) {
+    .grand-prize {
+        padding: 96px 96px;
+    }
+
+    .cpt-heading {
+        font-size: 42px;
+    }
+}
+
+@media(width<920px) {
+    .grand-prize {
+        padding: 96px 64px;
+    }
+
+    .claim-prize-ticket {
+        padding: 64px 64px;
+    }
+}
+
+@media(width<768px) {
+    .grand-prize {
+        padding: 64px 48px;
+    }
+
+    .claim-prize-ticket {
+        flex-direction: column;
+    }
+
+    .cpt-left {
+        width: 100%;
+    }
+
+    .cpt-right {
+        width: 100%;
+    }
+
+    .cpt-heading {
+        font-size: 36px;
+    }
+
+    .claim-prize-ticket {
+        padding: 32px 32px;
+    }
+
+    .cpt-reserve {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .claim-prize-ticket {
+        border-radius: 40px;
+    }
+}
+
+@media(width<580px) {
+    .grand-prize {
+        padding: 64px 32px;
+    }
+
+    .cpt-heading {
+        font-size: 30px;
+    }
+}
+
+@media(width<480px) {
+    .grand-prize {
+        padding: 64px 16px;
+    }
+}
