@@ -9,7 +9,7 @@ import GrandPrize from '../components/GrandPrize';
 
 function Home(props) {
     return (
-        <>
+        <div className="home">
             <Navbar />
             <Hero />
             <About />
@@ -17,8 +17,14 @@ function Home(props) {
             <HackathonProcess />
             <HackathonSchedule />
             <GrandPrize />
+            <div className="register-floater">
+                <div className="her-lef-bottom button-animation-parent">
+                    Register Now for Free!
+                    <div className="button-animation-div"></div>
+                </div>
+            </div>
             {/* <ClaimPrizes /> */}
-        </>
+        </div>
 
     );
 }

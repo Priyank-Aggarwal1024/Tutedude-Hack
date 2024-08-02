@@ -99,6 +99,8 @@
 
     .hackathon-left {
         padding: 64px 0;
+        padding-bottom: 0;
+
     }
 
     .hackathon-right {
@@ -120,6 +122,10 @@
 @media(width<580px) {
     .hackathon {
         padding: 0px 32px;
+    }
+
+    .hack-step-card-outer {
+        padding-top: 80px;
     }
 
     .hack-heading {

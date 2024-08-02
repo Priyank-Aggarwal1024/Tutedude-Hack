@@ -1,9 +1,9 @@
 import React from 'react';
 import '../styles/hero.css'
 import heroImg from '../assets/hero-img.png'
-import Calendar from '../assets/Calendar.png'
-import Global from '../assets/Global.png'
-import people from '../assets/people.png'
+import Calendar from '../assets/Calendar.svg'
+import Global from '../assets/Global.svg'
+import people from '../assets/people.svg'
 function Hero(props) {
     return (
         <section className="hero-section">

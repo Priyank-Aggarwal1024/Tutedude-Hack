@@ -3,12 +3,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding-top: 12px;
+    position: relative;
+    z-index: 20;
+    background-color: #fff;
 }
 
 .hero-left {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 18px;
 }
 
 .hero-right {
@@ -133,6 +137,8 @@
 @media(width<1280px) {
     .hero-section {
         padding: 96px 96px;
+        padding-top: 12px;
+
     }
 }
 
@@ -154,6 +160,8 @@
 @media(width<768px) {
     .hero-section {
         padding: 64px 48px;
+        padding-top: 12px;
+
     }
 
     .hero-heading {
@@ -164,6 +172,17 @@
 @media(width<580px) {
     .hero-section {
         padding: 64px 32px;
+        padding-top: 12px;
+
+    }
+
+    .her-lef-middle {
+        gap: 8px;
+    }
+
+    .hlm-div-icon>img {
+        width: 24px;
+        height: 24px;
     }
 
     .hero-heading {
@@ -174,5 +193,7 @@
 @media(width<480px) {
     .hero-section {
         padding: 64px 16px;
+        padding-top: 12px;
+
     }
 }

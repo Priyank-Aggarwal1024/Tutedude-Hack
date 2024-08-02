@@ -18,13 +18,10 @@
 }
 
 .about-left-top {
-    height: 67px;
     color: var(--Nerded-Brand-slate-50, #F8FAFC);
     font-family: Poppins;
-    font-size: 30px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%;
     /* 67.2px */
     letter-spacing: -2.24px;
     display: flex;
@@ -60,6 +57,9 @@
 .about-heading {
     display: inline-flex;
     width: fit-content;
+    font-size: 48px;
+    line-height: 120%;
+
 }
 
 
@@ -103,15 +103,31 @@
 
     .about-left {
         width: 100%;
+        gap: 10px;
+    }
+
+    .about-left-top>img {
+        max-height: 80px;
     }
 }
 
-@media(width<920px) {}
+@media(width<920px) {
+    .about-heading {
+        font-size: 42px;
+
+    }
+}
 
 @media(width<768px) {
     .about {
         padding: 64px 48px;
     }
+
+    .about-heading {
+        font-size: 36px;
+
+    }
+
 }
 
 @media(width<580px) {
@@ -123,6 +139,12 @@
         flex-wrap: wrap;
         height: fit-content;
     }
+
+    .about-heading {
+        font-size: 30px;
+
+    }
+
 }
 
 @media(width<480px) {

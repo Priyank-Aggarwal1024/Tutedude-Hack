@@ -1,3 +1,7 @@
+.home {
+    position: relative;
+}
+
 .button-animation-div {
     position: absolute;
     width: 32px;
@@ -71,6 +75,29 @@
     }
 }
 
+.register-floater>div {
+    display: flex;
+    padding: 20px 49px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #800080;
+    box-shadow: 0px 4.279px 9.521px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    width: 100%;
+    line-height: 123.5%;
+}
+
+.register-floater {
+    display: none;
+}
+
+
 .button-animation-parent {
     position: relative;
     overflow: hidden;
@@ -122,4 +149,18 @@
         }
     }
 
+}
+
+@media(width<580px) {
+    .register-floater {
+        display: block;
+        width: 100%;
+        position: sticky;
+        bottom: 0;
+        z-index: 15;
+    }
+
+    .register-floater>div {
+        border-radius: 0;
+    }
 }
